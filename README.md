@@ -28,7 +28,7 @@ An interactive web-based presentation built with RevealJS for a financial instit
 ## Quick Start
 
 ### View Online
-Visit the live presentation: [GitHub Pages URL will be added after deployment]
+Visit the live presentation: **https://unknownar.github.io/test/**
 
 ### Run Locally
 
