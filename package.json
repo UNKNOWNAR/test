@@ -1,0 +1,23 @@
+{
+  "name": "quarterly-earnings-presentation",
+  "version": "1.0.0",
+  "description": "RevealJS presentation for Q4 2025 quarterly earnings report",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "revealjs",
+    "presentation",
+    "earnings",
+    "financial"
+  ],
+  "author": "24f3001857@ds.study.iitm.ac.in",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "serve": "^14.2.1"
+  }
+}
