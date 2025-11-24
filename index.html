@@ -17,167 +17,296 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 </head>
-<h3>18.5%</h3>
-<p>Net Margin</p>
-<p class="metric-change positive">↑ 2.3pp</p>
-</div>
-<div class="metric-card fragment fade-up" data-fragment-index="4">
-    <h3>$4.87</h3>
-    <p>EPS (Diluted)</p>
-    <p class="metric-change positive">↑ 31%</p>
-</div>
-</div>
-<aside class="notes">
-    The model analyzes key financial indicators and provides accurate risk scores. This has
-    reduced
-    default rates by 15% and improved our loan approval process efficiency.
-</aside>
-</section>
 
-<!-- Mathematical Equations -->
-<section data-background-color="#1a1a2e">
-    <h2>Financial Formulas & Metrics</h2>
+<body>
+    <div class="reveal">
+        <div class="slides">
 
-    <div class="formula-container fragment fade-in">
-        <h4>Return on Equity (ROE)</h4>
-        <p class="math-formula">
-            $$ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}} \times 100\%$$
-        </p>
-        <p class="result">Our ROE: <strong>22.3%</strong></p>
+            <!-- Title Slide -->
+            <section data-background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                <h1>Q4 2025 Earnings Report</h1>
+                <h3>Financial Performance Overview</h3>
+                <p style="margin-top: 50px;">
+                    24f3001857@ds.study.iitm.ac.in<br>
+                    <small>Date: November 2025</small>
+                </p>
+                <aside class="notes">
+                    Welcome to the Q4 2025 earnings presentation. This report covers our financial performance
+                    for the quarter ending October 2025. Key highlights include record revenue growth and
+                    improved operational efficiency.
+                </aside>
+            </section>
+
+            <!-- Markdown Slide (Inline) -->
+            <section data-markdown>
+                <textarea data-template>
+## Executive Summary
+
+This content is written in **Markdown**.
+
+* Revenue up 23%
+* Net Income up 28%
+* EPS up 31%
+                </textarea>
+            </section>
+
+            <!-- External Markdown Slide -->
+            <section data-markdown="slides.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+                data-separator-notes="^Note:">
+            </section>
+
+            <!-- Fragment Animations - Key Metrics -->
+            <section data-background-color="#0f3460">
+                <h2>Key Financial Metrics</h2>
+                <div class="metrics-container">
+                    <div class="metric-card fragment fade-up" data-fragment-index="1">
+                        <h3>$2.4B</h3>
+                        <p>Total Revenue</p>
+                        <p class="metric-change positive">↑ 23%</p>
+                    </div>
+                    <div class="metric-card fragment fade-up" data-fragment-index="2">
+                        <h3>$445M</h3>
+                        <p>Net Income</p>
+                        <p class="metric-change positive">↑ 28%</p>
+                    </div>
+                    <div class="metric-card fragment fade-up" data-fragment-index="3">
+                        <h3>18.5%</h3>
+                        <p>Net Margin</p>
+                        <p class="metric-change positive">↑ 2.3pp</p>
+                    </div>
+                    <div class="metric-card fragment fade-up" data-fragment-index="4">
+                        <h3>$4.87</h3>
+                        <p>EPS (Diluted)</p>
+                        <p class="metric-change positive">↑ 31%</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    The model analyzes key financial indicators and provides accurate risk scores. This has reduced
+                    default rates by 15% and improved our loan approval process efficiency.
+                </aside>
+            </section>
+
+            <!-- Code Sample Slide (Python) -->
+            <section data-background-color="#1a1a2e">
+                <h2>Automated Risk Assessment</h2>
+                <pre><code class="language-python" data-trim data-noescape data-line-numbers="1-2|5-7|10-12|15-16">
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+
+# Load historical transaction data
+data = pd.read_csv('customer_transactions.csv')
+features = data[['income', 'debt_ratio', 'payment_history', 'credit_score']]
+
+# Train risk assessment model
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(features, data['default_indicator'])
+risk_scores = model.predict_proba(features)[:, 1]
+
+# Calculate expected loss
+expected_loss = np.sum(risk_scores * data['exposure_amount'])
+print(f"Portfolio Expected Loss: ${expected_loss:,.2f}")
+                </code></pre>
+                <aside class="notes">
+                    This Python code demonstrates our automated risk assessment pipeline. We use a Random Forest
+                    classifier to predict default probabilities based on customer financial data.
+                </aside>
+            </section>
+
+            <!-- Mathematical Equations -->
+            <section data-background-color="#1a1a2e">
+                <h2>Financial Formulas & Metrics</h2>
+
+                <div class="formula-container fragment fade-in">
+                    <h4>Return on Equity (ROE)</h4>
+                    <p class="math-formula">
+                        $$ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}} \times 100\%$$
+                    </p>
+                    <p class="result">Our ROE: <strong>22.3%</strong></p>
+                </div>
+
+                <div class="formula-container fragment fade-in">
+                    <h4>Earnings Per Share (EPS)</h4>
+                    <p class="math-formula">
+                        $$EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average Shares
+                        Outstanding}}$$
+                    </p>
+                    <p class="result">Current EPS: <strong>$4.87</strong></p>
+                </div>
+
+                <div class="formula-container fragment fade-in">
+                    <h4>Price-to-Earnings Ratio (P/E)</h4>
+                    <p class="math-formula">
+                        $$P/E = \frac{\text{Market Price per Share}}{\text{Earnings per Share}}$$
+                    </p>
+                    <p class="result">P/E Ratio: <strong>15.2</strong></p>
+                </div>
+
+                <aside class="notes">
+                    These are the key financial ratios investors use to evaluate our performance. Our ROE of 22.3%
+                    is well above the industry average of 15%. The P/E ratio of 15.2 indicates healthy valuation
+                    relative to earnings growth.
+                </aside>
+            </section>
+
+            <!-- Revenue Breakdown -->
+            <section data-background-color="#0f3460">
+                <h2>Revenue Breakdown by Segment</h2>
+                <div class="revenue-breakdown">
+                    <div class="revenue-item fragment fade-right" data-fragment-index="1">
+                        <div class="revenue-bar" style="width: 45%;">
+                            <span class="revenue-label">Retail Banking - 45%</span>
+                        </div>
+                        <span class="revenue-amount">$1.08B</span>
+                    </div>
+                    <div class="revenue-item fragment fade-right" data-fragment-index="2">
+                        <div class="revenue-bar" style="width: 30%;">
+                            <span class="revenue-label">Corporate Banking - 30%</span>
+                        </div>
+                        <span class="revenue-amount">$720M</span>
+                    </div>
+                    <div class="revenue-item fragment fade-right" data-fragment-index="3">
+                        <div class="revenue-bar" style="width: 15%;">
+                            <span class="revenue-label">Investment Services - 15%</span>
+                        </div>
+                        <span class="revenue-amount">$360M</span>
+                    </div>
+                    <div class="revenue-item fragment fade-right" data-fragment-index="4">
+                        <div class="revenue-bar" style="width: 10%;">
+                            <span class="revenue-label">Other Services - 10%</span>
+                        </div>
+                        <span class="revenue-amount">$240M</span>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Our revenue is well-diversified, with Retail Banking being the largest contributor.
+                    Corporate Banking continues to show steady growth.
+                </aside>
+            </section>
+
+            <!-- Code Sample Slide (JavaScript) -->
+            <section data-background-color="#1a1a2e">
+                <h2>Real-Time Transaction Monitoring</h2>
+                <pre><code class="language-javascript" data-trim data-noescape data-line-numbers="1-3|5-10|12-17">
+// Real-time transaction monitoring system
+const fraudDetectionThreshold = 0.85;
+const transactionStream = new WebSocket('wss://api.bank.com/transactions');
+
+// Monitor incoming transactions
+transactionStream.onmessage = (event) => {
+    const transaction = JSON.parse(event.data);
+    const riskScore = assessRiskScore(transaction);
+    
+    if (riskScore > fraudDetectionThreshold) {
+        flagForReview(transaction);
+        notifySecurityTeam(transaction);
+    }
+};
+
+// Machine learning risk assessment
+function assessRiskScore(transaction) {
+    return mlModel.predict({
+        amount: transaction.amount,
+        location: transaction.location,
+        merchantCategory: transaction.merchant_category,
+        userBehaviorPattern: getUserPattern(transaction.userId)
+    });
+}
+                </code></pre>
+                <aside class="notes">
+                    This JavaScript snippet shows how we handle real-time transaction monitoring using WebSockets.
+                    High-risk transactions are immediately flagged for review.
+                </aside>
+            </section>
+
+            <!-- Future Outlook -->
+            <section data-background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                <h2>Q1 2026 Outlook</h2>
+                <ul class="outlook-list">
+                    <li class="fragment fade-in-then-semi-out">
+                        <strong>Revenue Growth:</strong> Projected 18-22% YoY increase
+                    </li>
+                    <li class="fragment fade-in-then-semi-out">
+                        <strong>Digital Expansion:</strong> Launch mobile banking 2.0 platform
+                    </li>
+                    <li class="fragment fade-in-then-semi-out">
+                        <strong>Market Entry:</strong> Expansion into Southeast Asian markets
+                    </li>
+                    <li class="fragment fade-in-then-semi-out">
+                        <strong>Technology Investment:</strong> $150M in AI and blockchain initiatives
+                    </li>
+                    <li class="fragment fade-in-then-semi-out">
+                        <strong>Sustainability:</strong> 50% reduction in carbon footprint
+                    </li>
+                </ul>
+                <aside class="notes">
+                    Looking ahead to Q1 2026, we're optimistic about continued growth. The mobile banking 2.0
+                    platform will launch in January.
+                </aside>
+            </section>
+
+            <!-- Q&A Slide -->
+            <section data-background-color="#1a1a2e">
+                <h1>Questions & Discussion</h1>
+                <p style="font-size: 1.5em; margin-top: 50px;">Thank you for your attention</p>
+                <div style="margin-top: 80px; font-size: 0.9em;">
+                    <p>📧 Contact: 24f3001857@ds.study.iitm.ac.in</p>
+                    <p>🌐 Investor Relations: ir.financialinstitution.com</p>
+                </div>
+                <aside class="notes">
+                    Open the floor for questions.
+                </aside>
+            </section>
+
+        </div>
     </div>
 
-    <div class="formula-container fragment fade-in">
-        <h4>Earnings Per Share (EPS)</h4>
-        <p class="math-formula">
-            $$EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Average
-            Shares
-            Outstanding}}$$
-        </p>
-        <p class="result">Current EPS: <strong>$4.87</strong></p>
-    </div>
+    <!-- RevealJS and Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
 
-    <div class="formula-container fragment fade-in">
-        <h4>Price-to-Earnings Ratio (P/E)</h4>
-        <p class="math-formula">
-            $$P/E = \frac{\text{Market Price per Share}}{\text{Earnings per Share}}$$
-        </p>
-        <p class="result">P/E Ratio: <strong>15.2</strong></p>
-    </div>
+    <!-- Initialize RevealJS -->
+    <script>
+        Reveal.initialize({
+            // Display settings
+            width: 1280,
+            height: 720,
+            margin: 0.04,
 
-    <aside class="notes">
-        These are the key financial ratios investors use to evaluate our performance. Our ROE of
-        22.3%
-        is well above the industry average of 15%. The P/E ratio of 15.2 indicates healthy valuation
-        relative to earnings growth.
-    </aside>
-</section>
+            // Navigation
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            history: true,
 
-<!-- More Animated Content -->
-<section data-background-color="#0f3460">
-    <h2>Revenue Breakdown by Segment</h2>
-    <div class="revenue-breakdown">
-        <div class="revenue-item fragment fade-right" data-fragment-index="1">
-            <div class="revenue-bar" style="width: 45%;">
-                <span class="revenue-label">Retail Banking - 45%</span>
-            </div>
-            <span class="revenue-amount">$1.08B</span>
-        </div>
-        <div class="revenue-item fragment fade-right" data-fragment-index="2">
-            <div class="revenue-bar" style="width: 30%;">
-                <span class="revenue-label">Corporate Banking - 30%</span>
-            </div>
-            <span class="revenue-amount">$720M</span>
-        </div>
-        <div class="revenue-item fragment fade-right" data-fragment-index="3">
-            <div class="revenue-bar" style="width: 15%;">
-                <span class="revenue-label">Investment Services - 15%</span>
-            </div>
-            <span class="revenue-amount">$360M</span>
-        </div>
-        <div class="revenue-item fragment fade-right" data-fragment-index="4">
-            <div class="revenue-bar" style="width: 10%;">
-                <span class="revenue-label">Other Services - 10%</span>
-            </div>
-            <span class="revenue-amount">$240M</span>
-        </div>
-    </div>
-    <aside class="notes">
+            // Transitions
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            transitionSpeed: 'default',
 
-        <!-- Future Outlook -->
-        <section data-background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
-            <h2>Q1 2026 Outlook</h2>
-            <ul class="outlook-list">
-                <li class="fragment fade-in-then-semi-out">
-                    <strong>Revenue Growth:</strong> Projected 18-22% YoY increase
-                </li>
-                <li class="fragment fade-in-then-semi-out">
-        </section>
+            // Plugins
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMath.KaTeX
+            ],
 
-        <!-- Q&A Slide -->
-        <section data-background-color="#1a1a2e">
-            <h1>Questions & Discussion</h1>
-            <p style="font-size: 1.5em; margin-top: 50px;">Thank you for your attention</p>
-            <div style="margin-top: 80px; font-size: 0.9em;">
-                <p>📧 Contact: 24f3001857@ds.study.iitm.ac.in</p>
-                <p>🌐 Investor Relations: ir.financialinstitution.com</p>
-            </div>
-            <aside class="notes">
-                Open the floor for questions. Be prepared to discuss topics like: margin
-                sustainability,
-                risk management strategies, capital allocation plans, and competitive positioning.
-                Have the detailed financial tables ready for reference.
-            </aside>
-        </section>
-
-        </div>
-        </div>
-
-        <!-- RevealJS and Plugins -->
-        <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-
-        <!-- Initialize RevealJS -->
-        <script>
-            Reveal.initialize({
-                // Display settings
-                width: 1280,
-                height: 720,
-                margin: 0.04,
-
-                // Navigation
-                controls: true,
-                progress: true,
-                center: true,
-                hash: true,
-                history: true,
-
-                // Transitions
-                transition: 'slide', // none/fade/slide/convex/concave/zoom
-                transitionSpeed: 'default',
-
-                // Plugins
-                plugins: [
-                    RevealMarkdown,
-                    RevealHighlight,
-                    RevealNotes,
-                    RevealMath.KaTeX
-                ],
-
-                // Math plugin configuration
-                math: {
-                    mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-                    config: 'TeX-AMS_HTML-full',
-                    TeX: {
-                        Macros: {
-                            RR: "{\\bf R}"
-                        }
+            // Math plugin configuration
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+                config: 'TeX-AMS_HTML-full',
+                TeX: {
+                    Macros: {
+                        RR: "{\\bf R}"
                     }
                 }
-            });
-        </script>
-        </body>
+            }
+        });
+    </script>
+</body>
 
 </html>
