@@ -26,25 +26,21 @@ Pravega2025-Robotics/
 │   ├── images/                # Robot photos
 │   ├── cad/                   # CAD drawings
 │   ├── index.html             # Technical Report (HTML)
-│   ├── generate_pdf.py        # PDF generator script
 │   └── Technical_Report_Final.pdf
 │
 ├── PickDrop/                  # Pick & Drop Robot
 │   ├── images/                # Generated diagrams
 │   ├── index.html             # Technical Report (HTML)
-│   ├── generate_pdf.py        # PDF generator script
 │   └── PickDrop_Report_v3.pdf
 │
 ├── RoboSprint/                # Robo Sprint Robot
 │   ├── images/                # Generated diagrams
 │   ├── index.html             # Technical Report (HTML)
-│   ├── generate_pdf.py        # PDF generator script
 │   └── RoboSprint_Technical_Report.pdf
 │
 ├── TugOfWar/                  # Tug of War Robot
 │   ├── images/                # Generated diagrams
 │   ├── index.html             # Technical Report (HTML)
-│   ├── generate_pdf.py        # PDF generator script
 │   └── TugOfWar_Technical_Report.pdf
 │
 ├── .gitignore
@@ -90,51 +86,6 @@ A high-torque robot designed to outpull opponents in head-to-head elimination ro
 - **Motors:** 775 DC with 100:1 gear reduction
 - **Features:** Anti-slip control, burst mode
 - **Drivers:** BTS7960 high-current drivers (43A)
-
----
-
-## 🛠️ Generating PDFs
-
-Each project contains a `generate_pdf.py` script that uses Playwright to convert HTML to PDF.
-
-### Setup
-```bash
-# Create virtual environment
-python -m venv venv
-
-# Activate (Windows)
-.\venv\Scripts\activate
-
-# Install dependencies
-pip install playwright
-python -m playwright install chromium
-```
-
-### Generate PDF
-```bash
-cd LineMazeFollower  # or any project folder
-python generate_pdf.py
-```
-
----
-
-## 📝 Report Structure
-
-Each technical report follows the Pravega 2025 rubric (80 points):
-
-1. **Team Details** - Name, members, college, contact
-2. **Abstract** - Brief robot description and purpose
-3. **Design Concept** - Mechanism, components, control strategy (25 pts)
-4. **Working Principle** - Movement, sensing, control logic (25 pts)
-5. **Innovation & Features** - Special capabilities (10 pts)
-6. **References** - Technical documentation
-
----
-
-## 📅 Competition Timeline
-
-- **Prelims Deadline:** December 5, 2025, 11:59 PM IST
-- **Finals:** February 7-8, 2026 @ IISc Bangalore
 
 ---
 
